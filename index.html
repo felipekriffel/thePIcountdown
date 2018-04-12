@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Page Title</title>
+    <title>It's the PI countdown</title>
     <style>
         *{
             box-sizing: border-box
@@ -24,34 +24,41 @@
         }
         main>div{
             flex-grow: 3;
+            max-height: 80vw;
             height: 25%;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 10vh;
+            max-width: 90vw;
+            width: 70vmax;
             display: flex;
             flex-direction: row
         }
         main>div>div{
             height: 100%;
+            flex-grow: 1;
             display: flex;
             flex-direction: column;
-            justify-content: flex-end
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 5vw;
+            justify-content: center
         }
         main>div>div>div:first-child{
             background-color: #e0e0e0;
+            border-radius: 15%;
             display: flex;
             align-items: center;
-            margin: 2vw;
+            justify-content: center;
+            margin: 1vw;
+            max-height: 40vw;
             height: 50%;
             padding-left: .5em;
-            padding-right: .5em
+            padding-right: .5em;
         }
         main>div>div>div:last-child{
-            font-size: 0.6em;
+            font-size: 0.8em;
             text-align: center
         }
         p{
             font-family: Arial, Helvetica, sans-serif;
-            font-size: 8vh
+            font-size: 3.5vw
         }
         main>p:last-child{
             flex-grow: 1;
@@ -65,31 +72,23 @@
     <main>
         <div class="timer">
             <div>
-                <div>
-                    000
-                </div>
+                <div>000</div>
                 <div>Dias</div>
             </div>
             <div>
-                <div>
-                    00
-                </div>
+                <div>00</div>
                 <div>Hrs</div>
             </div>
             <div>
-                <div>
-                    00
-                </div>
+                <div>00</div>
                 <div>Min</div>
             </div>
             <div>
-                <div>
-                    00
-                </div>
+                <div>00</div>
                 <div>Sec</div>
             </div>
         </div>
-        <p>Para o fim do Projeto Integrador</p>
+        <p>Para a entrega final do Projeto Integrador</p>
     </main>
     <script>
         var boxDia = document.querySelector("main > div > div:first-child > div:first-child")
